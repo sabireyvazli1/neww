@@ -15,12 +15,12 @@ forrm.addEventListener("submit", function(e){
     obj.id = IDINP.value;
 
     // Use Axios to send data to your backend
-    axios.post("https://neww-9c8k.onrender.com/student", obj);
+    axios.post("https://users-jb5u.onrender.com/student", obj);
 });
 
 forrm2.addEventListener("submit", function (e){
     e.preventDefault();
 
     const idToDelete = deleteIdINP.value;
-    axios.delete(`https://neww-9c8k.onrender.com/student/${idToDelete}`);
+    axios.delete(`https://users-jb5u.onrender.com/student/${idToDelete}`);
 });
